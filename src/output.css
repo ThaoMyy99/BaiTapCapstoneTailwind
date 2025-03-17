@@ -696,6 +696,10 @@ p {
 
 /* ------- card hover image slide up end -------- */
 
+.visible{
+  visibility: visible;
+}
+
 .invisible{
   visibility: hidden;
 }
@@ -820,16 +824,16 @@ p {
   top: 100%;
 }
 
+.z-10{
+  z-index: 10;
+}
+
 .z-\[-1\]{
   z-index: -1;
 }
 
 .z-\[1\]{
   z-index: 1;
-}
-
-.z-10{
-  z-index: 10;
 }
 
 .col-span-full{
@@ -877,10 +881,6 @@ p {
   margin-top: 1.75rem;
 }
 
-.mt-7\.5{
-  margin-top: 30px;
-}
-
 .mt-\[110px\]{
   margin-top: 110px;
 }
@@ -891,14 +891,6 @@ p {
 
 .mt-\[64px\]{
   margin-top: 64px;
-}
-
-.mr-2{
-  margin-right: 0.5rem;
-}
-
-.mr-1{
-  margin-right: 0.25rem;
 }
 
 .block{
@@ -951,10 +943,6 @@ p {
 
 .h-full{
   height: 100%;
-}
-
-.max-h-0{
-  max-height: 0px;
 }
 
 .max-h-15{
@@ -1017,10 +1005,6 @@ p {
   width: 30px;
 }
 
-.w-8{
-  width: 2rem;
-}
-
 .w-9{
   width: 2.25rem;
 }
@@ -1067,10 +1051,6 @@ p {
 
 .max-w-\[410px\]{
   max-width: 410px;
-}
-
-.max-w-\[528px\]{
-  max-width: 528px;
 }
 
 .max-w-\[70px\]{
@@ -1128,22 +1108,6 @@ p {
 
 .animate-up-down{
   animation: up-down 2s linear infinite;
-}
-
-@keyframes bounce{
-  0%, 100%{
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce{
-  animation: bounce 1s infinite;
 }
 
 .cursor-pointer{
@@ -1323,12 +1287,12 @@ p {
   border-width: 3px;
 }
 
-.border-t{
-  border-top-width: 1px;
-}
-
 .border-b{
   border-bottom-width: 1px;
+}
+
+.border-t{
+  border-top-width: 1px;
 }
 
 .border-\[\#F2F2F2\]{
@@ -1358,14 +1322,14 @@ p {
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
-.border-t-white{
-  --tw-border-opacity: 1;
-  border-top-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-}
-
 .border-b-slate-300{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
+}
+
+.border-t-white{
+  --tw-border-opacity: 1;
+  border-top-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
 .border-opacity-20{
@@ -1422,6 +1386,11 @@ p {
   padding: 1.75rem;
 }
 
+.px-2\.5{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1430,11 +1399,6 @@ p {
 .px-7\.5{
   padding-left: 30px;
   padding-right: 30px;
-}
-
-.px-\[11px\]{
-  padding-left: 11px;
-  padding-right: 11px;
 }
 
 .px-\[18px\]{
@@ -1455,6 +1419,11 @@ p {
 .py-24{
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-5{
@@ -1485,21 +1454,6 @@ p {
 .py-\[13px\]{
   padding-top: 13px;
   padding-bottom: 13px;
-}
-
-.py-\[15px\]{
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.px-2\.5{
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .pb-10{
@@ -1542,16 +1496,12 @@ p {
   padding-left: 2.75rem;
 }
 
-.pl-5{
-  padding-left: 1.25rem;
-}
-
 .pr-2{
   padding-right: 0.5rem;
 }
 
-.pr-5{
-  padding-right: 1.25rem;
+.pr-3{
+  padding-right: 0.75rem;
 }
 
 .pt-1{
@@ -1590,14 +1540,6 @@ p {
   padding-top: 75px;
 }
 
-.pr-1{
-  padding-right: 0.25rem;
-}
-
-.pr-3{
-  padding-right: 0.75rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1632,10 +1574,6 @@ p {
 .text-7xl{
   font-size: 4.5rem;
   line-height: 1;
-}
-
-.text-\[17px\]{
-  font-size: 17px;
 }
 
 .text-\[19px\]{
@@ -1698,10 +1636,6 @@ p {
   line-height: 110%;
 }
 
-.leading-\[120\%\]{
-  line-height: 120%;
-}
-
 .leading-\[130\%\]{
   line-height: 130%;
 }
@@ -1714,16 +1648,16 @@ p {
   line-height: 141%;
 }
 
+.leading-\[164\%\]{
+  line-height: 164%;
+}
+
 .leading-\[90px\]{
   line-height: 90px;
 }
 
 .leading-normal{
   line-height: 1.5;
-}
-
-.leading-\[164\%\]{
-  line-height: 164%;
 }
 
 .text-\[\#686868\]{
@@ -1772,12 +1706,12 @@ p {
   transition-duration: 150ms;
 }
 
-.duration-500{
-  transition-duration: 500ms;
-}
-
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
 }
 
 .services .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -1844,10 +1778,6 @@ p {
 
 .hover\:ml-1:hover{
   margin-left: 0.25rem;
-}
-
-.hover\:animate-up-down:hover{
-  animation: up-down 2s linear infinite;
 }
 
 .hover\:border-destructive:hover{
@@ -2157,16 +2087,8 @@ p {
     display: flex;
   }
 
-  .lg\:h-10{
-    height: 2.5rem;
-  }
-
   .lg\:h-20{
     height: 5rem;
-  }
-
-  .lg\:w-10{
-    width: 2.5rem;
   }
 
   .lg\:w-20{
@@ -2228,10 +2150,6 @@ p {
   .lg\:-translate-y-1\/2{
     --tw-translate-y: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3{
@@ -2321,10 +2239,6 @@ p {
     padding-left: 2.75rem;
   }
 
-  .lg\:pl-7\.5{
-    padding-left: 30px;
-  }
-
   .lg\:pt-15{
     padding-top: 60px;
   }
@@ -2344,11 +2258,6 @@ p {
 
   .lg\:text-\[40px\]{
     font-size: 40px;
-  }
-
-  .lg\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .lg\:leading-\[130\%\]{
