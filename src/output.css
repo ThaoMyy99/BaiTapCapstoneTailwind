@@ -1386,6 +1386,10 @@ p {
   padding: 1.75rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .px-2\.5{
   padding-left: 10px;
   padding-right: 10px;
